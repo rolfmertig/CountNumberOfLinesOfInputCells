@@ -1,0 +1,127 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      3671,        118]
+NotebookOptionsPosition[      3139,         95]
+NotebookOutlinePosition[      3483,        110]
+CellTagsIndexPosition[      3440,        107]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"AppendTo", "[", 
+    RowBox[{"$Path", ",", 
+     RowBox[{"NotebookDirectory", "[", "]"}]}], "]"}], "/;", 
+   RowBox[{"FreeQ", "[", 
+    RowBox[{"$Path", ",", 
+     RowBox[{"NotebookDirectory", "[", "]"}]}], "]"}]}], ";"}], "\n", 
+ RowBox[{"Needs", "[", "\"\<CountNumberOfLinesOfInputCells`\>\"", 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.538307383651393*^9, 3.5383074166772823`*^9}, {
+  3.5383075162889795`*^9, 3.538307581418705*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"AbsoluteTiming", "[", 
+  RowBox[{"CountNumberOfLinesOfInputCells", "[", 
+   RowBox[{
+    RowBox[{"FileNameJoin", "@", 
+     RowBox[{"{", 
+      RowBox[{"$InstallationDirectory", ",", "\"\<AddOns\>\""}], "}"}]}], ",",
+     "Infinity"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.53830732221688*^9, 3.5383073467052803`*^9}}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"counting lines of  \"\>", "\[InvisibleSpace]", "277", 
+   "\[InvisibleSpace]", "\<\" files in \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"\<\"C:\\\\Program Files\\\\Wolfram \
+Research\\\\Mathematica\\\\8.0\\\\AddOns\"\>", ",", "\<\" \"\>", ",", 
+     "\[Infinity]"}], "}"}]}],
+  SequenceForm[
+  "counting lines of  ", 277, " files in ", {
+   "C:\\Program Files\\Wolfram Research\\Mathematica\\8.0\\AddOns", " ", 
+    DirectedInfinity[1]}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5383075979626513`*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"6.4813707`8.263211854998557", ",", "1690"}], "}"}]], "Output",
+ CellChangeTimes->{3.5383073523756046`*^9, 3.5383076043990192`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"AbsoluteTiming", "[", 
+  RowBox[{"CountNumberOfLinesOfInputCells", "[", 
+   RowBox[{"$InstallationDirectory", ",", "Infinity"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.53830732221688*^9, 3.5383073467052803`*^9}, 
+   3.5383076160286846`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"counting lines of  \"\>", "\[InvisibleSpace]", "10284", 
+   "\[InvisibleSpace]", "\<\" files in \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"\<\"C:\\\\Program Files\\\\Wolfram \
+Research\\\\Mathematica\\\\8.0\"\>", ",", "\<\" \"\>", ",", "\[Infinity]"}], 
+    "}"}]}],
+  SequenceForm[
+  "counting lines of  ", 10284, " files in ", {
+   "C:\\Program Files\\Wolfram Research\\Mathematica\\8.0", " ", 
+    DirectedInfinity[1]}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5383076196458917`*^9}],
+
+Cell[BoxData["$Aborted"], "Output",
+ CellChangeTimes->{3.5383076362938433`*^9}]
+}, Open  ]]
+},
+WindowSize->{701, 777},
+WindowMargins->{{79, Automatic}, {-19, Automatic}},
+FrontEndVersion->"8.0 for Microsoft Windows (64-bit) (October 6, 2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 483, 12, 52, "Input"],
+Cell[CellGroupData[{
+Cell[1065, 36, 350, 8, 52, "Input"],
+Cell[1418, 46, 577, 13, 43, "Print"],
+Cell[1998, 61, 170, 3, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2205, 69, 271, 5, 31, "Input"],
+Cell[2479, 76, 562, 13, 43, "Print"],
+Cell[3044, 91, 79, 1, 30, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
