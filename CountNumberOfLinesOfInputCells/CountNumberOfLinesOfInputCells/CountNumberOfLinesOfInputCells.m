@@ -11,7 +11,9 @@ http://mathematica.stackexchange.com/questions/1704/automatically-counting-the-n
 BeginPackage["CountNumberOfLinesOfInputCells`"]
 (* Exported symbols added here with SymbolName::usage *) 
 CountNumberOfLinesOfInputCells::usage = "CountNumberOfLinesOfInputCells[dir] counts the number of lines (with default 
-line length 78) of input cells (at top level) of all notebooks in dir. The operation runs completely in a Mathematica kernel, using only MakeExpression and 
+line length 78) of input cells (at top level) of all notebooks in dir. CountNumberOfLinesOfInputCells[{dir1, dir2, ...}] looks in dir1, dir2, ... and
+ CountNumberOfLinesOfInputCells[dir, n] includes files that are in subdirectories up to n levels down.
+The operation runs completely in a Mathematica kernel, using only MakeExpression and 
 some fixes thereof (e.g. input cells are splitted (like Ctrl Shift M) programmatically at newlines, since MakeExpression might not work in such a case.";
 
 Begin["`Private`"]
